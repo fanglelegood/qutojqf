@@ -323,6 +323,12 @@ void MainWindow::on_pushButton_clicked()
              }
     }
 
+
+    QFile myfilej5("D:\\qutojqf\\autojqf.lsp");//创建一个输出文件的文档
+    if (myfilej5.open(QFile::WriteOnly|QFile::Truncate))//注意WriteOnly是往文本中写入的时候用，ReadOnly是在读文本中内容的时候用，Truncate表示将原来文件中的内容清空
+        {
+
+        }
     QMessageBox::information(this,"提示信息","完成生成请至软件目录new文件夹查阅");
 
 
